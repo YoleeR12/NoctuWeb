@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nocturnals Community</title>
+    <style>
+        /* Your existing CSS styles */
+        :root {
+            --primary-color: #ff69b4;
+            --secondary-color: #ffb6c1;
+            --text-color: #2c3e50;
+            --bg-color: #fff0f5;
+            --accent-color: #fff5f8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: var(--text-color);
+            line-height: 1.6;
+            background-color: var(--bg-color);
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(255, 105, 180, 0.2);
+            z-index: 1000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin: 0 1.5rem;
+            font-weight: 500;
+            position: relative;
+            padding: 0.5rem 0;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: width 0.3s;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        section {
+            min-height: 100vh;
+            padding: 8rem 2rem 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        #home {
+            background: linear-gradient(135deg, #fff0f5 0%, #ffb6c1 100%);
+        }
+
+        .logo {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-bottom: 2rem;
+            object-fit: cover;
+            border: 3px solid var(--primary-color);
+            background-color: white;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            margin: 1rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
+            background-color: #ff1493;
+        }
+
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .social-button {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            background-color: white;
+            color: var(--text-color);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .social-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .social-button img {
+            width: 28px;
+            height: auto;
+            object-fit: contain;
+        }
+
+        .social-button img[alt="TikTok"] {
+            height: 32px;
+            width: auto;
+        }
+
+        .social-button img[alt="Discord"] {
+            height: 30px;
+            width: auto;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 1rem;
+            }
+
+            nav a {
+                margin: 0 0.8rem;
+                font-size: 0.9rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            section {
+                padding: 6rem 1rem 3rem;
+            }
+
+            .social-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="/home.html">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <img src="Nocturnals.gif" alt="Nocturnals Logo" class="logo">
+            <h1>Welcome to Nocturnals</h1>
+            <p class="subtitle">Join our gaming community!</p>
+            
+            <div class="social-buttons">
+                <a onclick="confirmDiscord(event)" class="social-button">
+                    <img src="discord.png" alt="Discord">
+                    Discord
+                </a>
+                <a href="https://www.tiktok.com/@babyboos.eu" class="social-button">
+                    <img src="tiktok.png" alt="TikTok">
+                    TikTok
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function confirmDiscord(event) {
+            event.preventDefault();
+            if (confirm('Make sure you read the rules in the discord!')) {
+                window.location.href = 'https://discord.gg/babyboos';
+            }
+        }
+    </script>
+</body>
+</html>
