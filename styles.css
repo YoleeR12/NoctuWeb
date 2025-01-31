@@ -35,6 +35,19 @@ nav {
     align-items: center;
 }
 
+/* Logo in Navigation Bar */
+.logo-link {
+    margin-right: auto; /* Push other nav items to the right */
+    display: flex;
+    align-items: center;
+}
+
+.logo-nav {
+    height: 50px; /* Adjust the size of the logo */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 1rem; /* Add spacing between logo and other nav items */
+}
+
 nav a {
     color: var(--text-color);
     text-decoration: none;
