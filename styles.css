@@ -356,16 +356,19 @@ footer {
 .join-now .button {
     display: inline-flex;
     align-items: center;
+    justify-content: center; /* Center the logo and text */
     gap: 0.8rem;
     background-color: var(--primary-color);
     color: white;
-    padding: 1rem 2rem;
+    padding: 1rem 3rem; /* Longer button */
     border-radius: 50px;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: 600;
     transition: all 0.3s;
     box-shadow: 0 4px 15px rgba(255, 105, 180, 0.3);
+    width: auto; /* Allow the button to grow with content */
+    max-width: 100%; /* Prevent overflow */
 }
 
 .join-now .button:hover {
