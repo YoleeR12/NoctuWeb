@@ -1,9 +1,9 @@
 :root {
-    --primary-color: #ff69b4;
-    --secondary-color: #ffb6c1;
-    --text-color: #2c3e50;
-    --bg-color: #fff0f5;
-    --accent-color: #fff5f8;
+    --primary-color: #ff69b4; /* Hot Pink */
+    --secondary-color: #ffb6c1; /* Light Pink */
+    --text-color: #2c3e50; /* Dark Gray */
+    --bg-color: #fff0f5; /* Very Light Pink */
+    --accent-color: #fff5f8; /* Very Light Pink */
 }
 
 * {
@@ -66,7 +66,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, #fff0f5 0%, #ffb6c1 100%); /* Original home page gradient */
+    background: linear-gradient(135deg, #fff0f5 0%, #ffb6c1 100%); /* Home page gradient */
 }
 
 .container {
@@ -102,7 +102,7 @@ section {
 .button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
-    background-color: #ff1493;
+    background-color: #ff1493; /* Darker Pink on Hover */
 }
 
 .social-buttons {
@@ -131,6 +131,7 @@ section {
 .social-button:hover {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    background-color: var(--accent-color); /* Light Pink on Hover */
 }
 
 .social-button img {
@@ -285,12 +286,12 @@ code {
 
 /* Footer Styles */
 footer {
-    background: #ffcbd3; /* New footer color */
-    color: #2c3e50; /* Darker text for better contrast */
+    background: white; /* White background */
+    color: var(--text-color); /* Dark Gray text */
     padding: 2.5rem 1rem;
     text-align: center;
     margin-top: auto;
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
+    border-top: 2px solid rgba(255, 105, 180, 0.1); /* Subtle border */
 }
 
 .footer-content {
@@ -324,19 +325,19 @@ footer {
 }
 
 .footer-links a {
-    color: #2c3e50; /* Dark text for links */
+    color: var(--primary-color); /* Hot Pink for links */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s, transform 0.3s;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1); /* Subtle background for links */
+    background-color: rgba(255, 105, 180, 0.1); /* Subtle pink background */
 }
 
 .footer-links a:hover {
-    color: var(--primary-color); /* Pink color on hover */
+    color: white; /* White text on hover */
+    background-color: var(--primary-color); /* Hot Pink background on hover */
     transform: translateY(-2px);
-    background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
 }
 
 @media (max-width: 768px) {
