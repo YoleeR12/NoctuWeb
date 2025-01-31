@@ -15,9 +15,30 @@
 
     <section id="home">
         <div class="container">
+            <img src="/banners/Nocturnals.gif" alt="Nocturnals Logo" class="logo">
             <h1>Welcome to Nocturnals</h1>
-            <p>Join our gaming community!</p>
+            <p class="subtitle">Join our gaming community!</p>
+
+            <div class="social-buttons">
+                <a onclick="confirmDiscord(event)" class="social-button">
+                    <img src="/banners/Discord.png" alt="Discord">
+                    Discord
+                </a>
+                <a href="https://www.tiktok.com/@babyboos.eu" class="social-button">
+                    <img src="/banners/tiktok.png" alt="TikTok">
+                    TikTok
+                </a>
+            </div>
         </div>
     </section>
+
+    <script>
+        function confirmDiscord(event) {
+            event.preventDefault();
+            if (confirm('Make sure you read the rules in the discord!')) {
+                window.location.href = 'https://discord.gg/babyboos';
+            }
+        }
+    </script>
 </body>
 </html>
