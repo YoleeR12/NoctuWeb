@@ -146,7 +146,7 @@ section {
 }
 
 .social-button img[alt="Discord"] {
-    height: 40px; /* Increased size */
+    height: 40px; /* Larger Discord icon */
     width: auto;
 }
 
@@ -371,7 +371,7 @@ footer {
 }
 
 .join-now .button img {
-    height: 40px; /* Increased size */
+    height: 40px; /* Larger Discord icon */
     width: auto;
 }
 
