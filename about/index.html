@@ -44,6 +44,15 @@
 
                     <p>We have our own little family and we can not wait for you to join us ❤️</p>
                     <p class="highlight text-center">So what are you waiting for?</p>
+
+                    <!-- New "Join Now" Section -->
+                    <div class="join-now">
+                        <p class="text-center">Join Now</p>
+                        <a onclick="confirmDiscord(event)" class="button">
+                            <img src="/banners/Discord.png" alt="Discord">
+                            Join Our Discord
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -60,5 +69,14 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function confirmDiscord(event) {
+            event.preventDefault();
+            if (confirm('Make sure you read the rules in the discord!')) {
+                window.location.href = 'https://discord.gg/babyboos';
+            }
+        }
+    </script>
 </body>
 </html>
