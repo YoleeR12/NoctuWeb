@@ -288,11 +288,12 @@ code {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(135deg, #ffb6c1 0%, #ff69b4 100%);
+    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
     color: white;
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
     text-align: center;
     margin-top: auto;
+    border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .footer-content {
@@ -303,22 +304,42 @@ footer {
 .footer-content p {
     margin: 0.5rem 0;
     font-size: 1rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.footer-content p:first-child {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.footer-content p:last-child {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
 }
 
 .footer-links {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .footer-links a {
     color: white;
     text-decoration: none;
-    margin: 0 0.5rem;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s, transform 0.3s;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-links a:hover {
     color: var(--accent-color);
+    transform: translateY(-2px);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 @media (max-width: 768px) {
