@@ -286,7 +286,7 @@ code {
 
 /* Footer Styles */
 footer {
-    background: #ffa8b5; /* Slightly darker pink than the home page */
+    background: white; /* White background */
     color: var(--text-color); /* Dark Gray text */
     padding: 2.5rem 1rem;
     text-align: center;
