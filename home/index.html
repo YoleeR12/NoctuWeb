@@ -3,33 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nocturnals - Home</title>
+    <title>Nocturnals Community</title>
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="/home/">Home</a>
-            <a href="/about/">About</a>
-            <a href="/contact/">Contact</a>
-        </nav>
-    </header>
+    <nav>
+        <a href="/home/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/minecraft/">Minecraft</a>
+        <a href="/contact/">Contact</a>
+    </nav>
 
-    <div class="banner-container">
-        <img src="/banners/Nocturnals.gif" alt="Nocturnals Banner" class="banner-image">
-    </div>
+    <section id="home">
+        <div class="container">
+            <img src="/banners/Nocturnals.gif" alt="Nocturnals Logo" class="logo">
+            <h1>Welcome to Nocturnals</h1>
+            <p class="subtitle">Join our gaming community!</p>
+            
+            <div class="social-buttons">
+                <a onclick="confirmDiscord(event)" class="social-button">
+                    <img src="/banners/Discord.png" alt="Discord">
+                    Discord
+                </a>
+                <a href="https://www.tiktok.com/@babyboos.eu" class="social-button">
+                    <img src="/banners/tiktok.png" alt="TikTok">
+                    TikTok
+                </a>
+            </div>
+        </div>
+    </section>
 
-    <div class="social-links">
-        <a href="https://discord.com" target="_blank">
-            <img src="/banners/Discord.png" alt="Discord">
-        </a>
-        <a href="https://tiktok.com" target="_blank">
-            <img src="/banners/tiktok.png" alt="TikTok">
-        </a>
-    </div>
-
-    <footer>
-        <p>&copy; 2025 Nocturnals. All rights reserved.</p>
-    </footer>
+    <script>
+        function confirmDiscord(event) {
+            event.preventDefault();
+            if (confirm('Make sure you read the rules in the discord!')) {
+                window.location.href = 'https://discord.gg/babyboos';
+            }
+        }
+    </script>
 </body>
 </html>
