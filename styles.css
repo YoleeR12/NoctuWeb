@@ -66,6 +66,7 @@ section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: #ffb6c1; /* Solid color for all sections */
 }
 
 .container {
@@ -75,7 +76,7 @@ section {
 }
 
 #home {
-    background: linear-gradient(135deg, #fff0f5 0%, #ffb6c1 100%);
+    background: #ffb6c1; /* Solid color matching the home page */
 }
 
 .logo {
@@ -288,8 +289,8 @@ code {
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(135deg, #ff69b4 0%, #ff1493 100%);
-    color: white;
+    background: #e7b4bb; /* Solid color for the footer */
+    color: #2c3e50; /* Darker text for better contrast */
     padding: 2.5rem 1rem;
     text-align: center;
     margin-top: auto;
@@ -304,7 +305,7 @@ footer {
 .footer-content p {
     margin: 0.5rem 0;
     font-size: 1rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: rgba(44, 62, 80, 0.9); /* Slightly transparent dark text */
 }
 
 .footer-content p:first-child {
@@ -315,7 +316,7 @@ footer {
 
 .footer-content p:last-child {
     font-size: 0.95rem;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(44, 62, 80, 0.8); /* Even lighter dark text */
 }
 
 .footer-links {
@@ -327,19 +328,19 @@ footer {
 }
 
 .footer-links a {
-    color: white;
+    color: #2c3e50; /* Dark text for links */
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s, transform 0.3s;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background for links */
 }
 
 .footer-links a:hover {
-    color: var(--accent-color);
+    color: var(--primary-color); /* Pink color on hover */
     transform: translateY(-2px);
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly brighter on hover */
 }
 
 @media (max-width: 768px) {
