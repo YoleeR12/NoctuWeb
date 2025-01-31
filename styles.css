@@ -146,7 +146,7 @@ section {
 }
 
 .social-button img[alt="Discord"] {
-    height: 32px; /* Match TikTok icon size */
+    height: 40px; /* Increased size */
     width: auto;
 }
 
@@ -346,13 +346,6 @@ footer {
     margin-top: 2rem;
 }
 
-.join-now p {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: var(--primary-color);
-}
-
 .join-now .button {
     display: inline-flex;
     align-items: center;
@@ -378,7 +371,7 @@ footer {
 }
 
 .join-now .button img {
-    height: 32px; /* Match TikTok icon size */
+    height: 40px; /* Increased size */
     width: auto;
 }
 
