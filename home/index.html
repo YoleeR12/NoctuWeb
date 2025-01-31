@@ -19,14 +19,18 @@
             <h1>Welcome to Nocturnals</h1>
             <p class="subtitle">Join our gaming community!</p>
 
+            <div class="content-card">
+                <p>We are a community for night gamers and content creators. Join us and be part of the fun!</p>
+            </div>
+
             <div class="social-buttons">
                 <a onclick="confirmDiscord(event)" class="social-button">
                     <img src="/banners/Discord.png" alt="Discord">
-                    Discord
+                    Join Discord
                 </a>
                 <a href="https://www.tiktok.com/@babyboos.eu" class="social-button">
                     <img src="/banners/tiktok.png" alt="TikTok">
-                    TikTok
+                    Follow on TikTok
                 </a>
             </div>
         </div>
@@ -35,7 +39,7 @@
     <script>
         function confirmDiscord(event) {
             event.preventDefault();
-            if (confirm('Make sure you read the rules in the discord!')) {
+            if (confirm('Make sure you read the rules in the Discord!')) {
                 window.location.href = 'https://discord.gg/babyboos';
             }
         }
